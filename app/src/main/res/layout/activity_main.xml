@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--layaout padre contenido en el relative PARA UBICAR LOS ELEMENTOS-->
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -14,14 +15,14 @@
         android:orientation="vertical"
         android:weightSum="1">
 
-
+<!--IMAGEN MALETA-->
         <ImageView
             android:id="@+id/maleta"
             android:layout_marginTop="150dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/maleta" />
-
+<!--TEXVIEW QUE CONTIENE Y UBICA VERSION-->
         <TextView
             android:id="@+id/version"
             android:layout_width="match_parent"
@@ -32,7 +33,7 @@
             android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:text="@string/version" />
-
+<!--TEXTVIEW DE EMAIL-->
         <TextView
             android:id="@+id/email"
             android:layout_width="match_parent"
@@ -71,6 +72,7 @@
             android:ems="15"
             android:inputType="textVisiblePassword" />
 
+        <!--BUTTON CON LAS DIMENSIONES Y MARGENES DEL MAIL Y PASSWORD-->
         <Button
             android:layout_marginTop="40dp"
             android:id="@+id/boton"
